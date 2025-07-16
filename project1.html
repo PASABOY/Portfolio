@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Art</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GreenSock for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <!-- Vanilla Tilt for interactive cards -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed w-full bg-transparent z-40 transition bg-opacity-0 py-6">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold tracking-widest">PASA</a>
+      <div class="space-x-8 uppercase text-sm">
+        <a href="index.html#projects" class="nav-link">Back to Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Details Section -->
+  <section id="project-details" class="py-24 relative">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">Street Art</h1>
+      <img src="assets/project1.png" alt="Street Art Screenshot" class="w-full rounded-lg shadow-lg mb-8">
+      <div class="text-left space-y-6">
+        <h2 class="text-3xl font-bold">What We Did</h2>
+        <p class="text-lg text-gray-300">My friend Shyheim and I worked together on the scripts for this project. We used free assets we found online to create a small game where you spray paint on walls.</p>
+
+        <h2 class="text-3xl font-bold">What I Learned and Enjoyed</h2>
+        <p class="text-lg text-gray-300">I learned how to collaborate effectively with a teammate and enjoyed the creative process of designing the gameplay mechanics. It was fun to see our ideas come to life.</p>
+
+        <h2 class="text-3xl font-bold">What I Didn't Enjoy</h2>
+        <p class="text-lg text-gray-300">The debugging process was challenging and time-consuming, especially when dealing with asset compatibility issues.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6 text-center">
+    <p class="text-gray-500">© 2025 Pasa Kirgil.</p>
+  </footer>
+
+</body>
+</html>

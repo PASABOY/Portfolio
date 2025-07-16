@@ -1,0 +1,39 @@
+@layer base {
+    html { scroll-behavior: smooth; }
+    body { position: relative; }
+  }
+  
+  /* Preloader Styles */
+  #preloader { transition: opacity 0.5s ease; }
+  
+  /* Floating Blobs */
+  .blob { position: absolute; width: 40vmax; height: 40vmax; border-radius: 50%; top: -10vmax; left: -10vmax; mix-blend-mode: screen; animation: float 12s ease-in-out infinite; }
+  .blob:nth-child(2) { top: 20vmax; right: -20vmax; animation-duration: 15s; }
+  .blob:nth-child(3) { bottom: -15vmax; left: 25vmax; animation-duration: 18s; }
+  
+  @keyframes float {
+    0%,100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(20vmax, 20vmax) scale(1.2); }
+  }
+  
+  /* Section Fade-in Utility */
+  .opacity-hidden { opacity: 0; transform: translateY(40px); }
+  .opacity-visible { opacity: 1; transform: translateY(0); transition: all 0.8s ease-out; }
+
+  /* Ensure About section text visibility */
+  #about h2, #about p, #about div {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Ensure Contact section text visibility */
+  #contact h2, #contact p, #contact div {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Ensure Contact section form visibility */
+  #contact form, #contact input, #contact textarea, #contact button {
+    opacity: 1;
+    transform: translateY(0);
+  }

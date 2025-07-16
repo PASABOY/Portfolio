@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life on Mars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GreenSock for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <!-- Vanilla Tilt for interactive cards -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed w-full bg-transparent z-40 transition bg-opacity-0 py-6">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold tracking-widest">PASA</a>
+      <div class="space-x-8 uppercase text-sm">
+        <a href="index.html#projects" class="nav-link">Back to Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Details Section -->
+  <section id="project-details" class="py-24 relative">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">Life on Mars</h1>
+      <video controls class="w-full rounded-lg shadow-lg mb-8">
+        <source src="assets/a_space_movie_pasa.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="text-left space-y-6">
+        <h2 class="text-3xl font-bold">What I Did</h2>
+        <p class="text-lg text-gray-300">This was a solo project that served as my introduction to Unity. I created the scripts with C# and camera scenes using Cinemachine, and the world was built using pre-made assets provided by my school.</p>
+
+        <h2 class="text-3xl font-bold">What I Learned and Enjoyed</h2>
+        <p class="text-lg text-gray-300">I learned the basics of Unity and how to use Cinemachine for dynamic camera scenes. I enjoyed exploring Unity's features and seeing my ideas come to life in a 3D environment.</p>
+
+        <h2 class="text-3xl font-bold">What I Didn't Enjoy</h2>
+        <p class="text-lg text-gray-300">The learning curve was steep, and I faced challenges understanding some of Unity's tools and workflows initially.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6 text-center">
+    <p class="text-gray-500">© 2025 Pasa Kirgil.</p>
+  </footer>
+
+</body>
+</html>
